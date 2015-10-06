@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Stretched Background Image</title>
+<style type="text/css">
+/* Remove margins from the 'html' and 'body' tags, and ensure the page takes up full screen height */
+html, body {height:100%; margin:0; padding:0;}
+/* Set the position and dimensions of the background image. */
+#page-background {position:fixed; top:0; left:0; width:100%; height:100%;}
+/* Specify the position and layering for the content that needs to appear in front of the background image. Must have a higher z-index value than the background image. Also add some padding to compensate for removing the margin from the 'html' and 'body' tags. */
+#content {position:relative; z-index:1; padding:10px;}
+</style>
+<!-- The above code doesn't work in Internet Explorer 6. To address this, we use a conditional comment to specify an alternative style sheet for IE 6 -->
+<!--[if IE 6]>
+<style type="text/css">
+html {overflow-y:hidden;}
+body {overflow-y:auto;}
+#page-background {position:absolute; z-index:-1;}
+#content {position:static;padding:10px;}
+</style>
+<![endif]-->
+</head>
+<body>
+	<div id="page-background"><img src=https://s-media-cache-ak0.pinimg.com/originals/0f/e2/9a/0fe29a1268d5da759b7ea697db9df67f.gif width="100%" height="100%" alt="Smile"></div>
+	<div id="content">
+	<h2></h2>
+	<p> <span style="color:red"> K ROB CAN SUCK IT</p>
+	<p></p>
+	</div>
+<marquee behavior="scroll" direction="right"><img src=https://media4.giphy.com/media/Y7TKv1A9blfCE/200.gif width="400" height="300" alt="Flying Bee" /></marquee>
+<marquee behavior="alternate" direction="up" width="80%"><marquee direction="right">https://s-media-cache-ak0.pinimg.com/originals/b5/14/60/b514601b6604e31f073134f1f3c19cc0.gif</marquee></marquee>
+</body>
+</html>
